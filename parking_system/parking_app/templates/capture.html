@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capture Image</title>
+    <!-- Add any required CSS links -->
+</head>
+<body>
+    <h1>Capture Image</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Capture</button>
+    </form>
+</body>
+</html>
